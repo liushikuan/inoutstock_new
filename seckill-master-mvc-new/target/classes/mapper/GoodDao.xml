@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="cn.codingxiaxw.dao.GoodDao">
+<!--    	<resultMap id="goodResultMap" type="entity.Good" >
+  	  <result column="good_num" property="templateId" jdbcType="VARCHAR" />
+      <result column="template_name" property="templateName" jdbcType="VARCHAR" />
+  	</resultMap> -->
+	
+	<insert id="insertGood">
+		INSERT INTO good
+			(
+			 `goodnum`,
+			 `goodname`,
+			 `maleorfemale`,
+			 `attribute1`,
+			 `attribute2`,
+			 `attribute3`
+			 )
+		 VALUES
+			 (
+			 #{good.goodnum},
+			 #{good.goodname},
+			 #{good.maleorfemale},
+			 #{good.attribute1},
+			 #{good.attribute2},
+			 #{good.attribute3}
+			 );
+	</insert>
+	
+	<select id="queryGoods" resultType="cn.codingxiaxw.entity.Good">
+		SELECT
+			 goodnum,
+			 goodname,
+			 maleorfemale,
+			 attribute1,
+			 attribute2,
+			 attribute3
+		 FROM good;
+	</select>
+	
+	<delete id="deleteGoodByid">
+		delete from good where goodnum = #{goodnum};
+	</delete>
+	
+</mapper>

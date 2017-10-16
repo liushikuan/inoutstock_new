@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/codingxiaxw/dao/GoodDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/codingxiaxw/dao/InStockDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/codingxiaxw/dao/TestDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/codingxiaxw/dao/VendorDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/codingxiaxw/entity/InStockHistory.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/codingxiaxw/entity/Test000.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/codingxiaxw/entity/Vendor.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/codingxiaxw/service/GoodService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cn/codingxiaxw/service/impl/GoodServiceImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/GoodDao.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/TestDao.xml" charset="GBK" />
+  </component>
+</project>
