@@ -39,7 +39,7 @@
                         <td>${gl.attribute2}</td>
                         <td>${gl.attribute3}</td>
                         <td class="btn btn-info" onclick="deleteGood('${gl.goodnum}')">删除</td>
-                        <td><a class="btn btn-info" href="/good/insertgood" target="_blank">新增</a></td>
+                        <td><a class="btn btn-info" href="/insertgood.jsp" target="_blank">新增</a></td>
                     </tr>
                 </c:forEach>
                 </tbody>

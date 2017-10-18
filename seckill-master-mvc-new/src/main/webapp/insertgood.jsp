@@ -17,10 +17,21 @@
                 <thead>
                 <tr>
                     <th>编码</th>
+                </tr>
+                <tr>
                     <th>名称</th>
+                </tr>
+                <tr>
                     <th>男款或女款</th>
+                </tr>
+                <tr>
                     <th>待定1</th>
+                </tr>
+                <tr>
                     <th>待定2</th>
+                </tr>
+
+                <tr>
                     <th>待定3</th>
                 </tr>
                 </thead>
