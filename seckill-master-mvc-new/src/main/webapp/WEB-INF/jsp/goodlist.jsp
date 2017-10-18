@@ -28,7 +28,7 @@
                 <tbody>
                 <c:forEach items="${goodlist}" var="gl">
                     <tr>
-                        <td>${gl.goodnum}</td>
+                        <td onclick="initTest()">${gl.goodnum}</td>
                         <td>${gl.goodname}</td>
                         <td>
                             ${gl.maleorfemale}
@@ -54,5 +54,8 @@
 
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<%--商品js--%>
+<script src="../../resource/script/good.js"></script>
+
 </body>
 </html>
