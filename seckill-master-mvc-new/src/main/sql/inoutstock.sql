@@ -1,4 +1,4 @@
-CREATE TABLE `inoutstock`.`Untitled`  (
+CREATE TABLE `inoutstock`.`good`  (
   `goodnum` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `goodname` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `maleorfemale` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
