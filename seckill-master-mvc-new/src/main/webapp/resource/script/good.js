@@ -6,8 +6,6 @@ function initTest() {
 }
 
 function deleteGood(goodnum) {
-    debugger;
-    alert("瞅你咋滴");
     $.get("/good/" + goodnum, {}, function (result) {
         debugger;
         //在回调函数种执行交互流程
@@ -22,4 +20,5 @@ function deleteGood(goodnum) {
             console.log('result: ' + result);
         }
     });
+    location.reload();
 }

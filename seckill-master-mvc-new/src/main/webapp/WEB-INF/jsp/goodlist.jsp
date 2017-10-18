@@ -37,7 +37,7 @@
                         <td>${gl.attribute1}</td>
                         <td>${gl.attribute2}</td>
                         <td>${gl.attribute3}</td>
-                        <td onclick="deleteGood('${gl.goodnum}')">删除</td>
+                        <td class="btn btn-info" onclick="deleteGood('${gl.goodnum}')">删除</td>
                     </tr>
                 </c:forEach>
                 </tbody>
