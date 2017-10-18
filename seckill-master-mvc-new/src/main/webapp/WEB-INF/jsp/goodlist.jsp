@@ -22,7 +22,7 @@
                     <th>待定1</th>
                     <th>待定2</th>
                     <th>待定3</th>
-                    <%--<th>详情页</th>--%>
+                    <th>删除</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -37,7 +37,7 @@
                         <td>${gl.attribute1}</td>
                         <td>${gl.attribute2}</td>
                         <td>${gl.attribute3}</td>
-                        <%--<td><a class="btn btn-info" href="/good/${gl.goodnum}/detail" target="_blank">详情</a></td>--%>
+                        <td onclick="deleteGood('${gl.goodnum}')">删除</td>
                     </tr>
                 </c:forEach>
                 </tbody>

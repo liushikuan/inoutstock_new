@@ -19,5 +19,7 @@ public interface GoodService {
 
 	//删除
 	public void deleteGoodByid(String goodnum);
+
+	public void deleteGoodByidAjax();
 }
  
