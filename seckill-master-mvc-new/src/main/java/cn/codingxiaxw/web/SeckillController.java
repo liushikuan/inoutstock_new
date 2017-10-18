@@ -9,6 +9,7 @@ import cn.codingxiaxw.enums.SeckillStatEnum;
 import cn.codingxiaxw.exception.RepeatKillException;
 import cn.codingxiaxw.exception.SeckillCloseException;
 //import cn.codingxiaxw.service.SeckillService;
+import cn.codingxiaxw.service.GoodService;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -26,8 +27,8 @@ import java.util.List;
 @RequestMapping("/seckill")//url:模块/资源/{}/细分
 public class SeckillController
 {
-//    @Autowired
-//    private SeckillService seckillService;
+      @Autowired
+      private GoodService goodService;
 //
 //    @RequestMapping(value = "/list",method = RequestMethod.GET)
 //    public String list(Model model)
@@ -49,21 +50,21 @@ public class SeckillController
 //        return "list";
 //    }
 
-    @RequestMapping(value = "/goodlist" , method = RequestMethod.GET)
+    @RequestMapping(value = "/list" , method = RequestMethod.GET)
     public String goodList(Model model) {
-		/*List<Good> list = goodService.queryGoods();*/
-        List<Good> goodlist = new ArrayList<Good>() {
-            {
-                add(new Good("G001",
-                        "AirForce1",
-                        "F",
-                        null,null,null));
-                add(new Good("G002",
-                        "AirMax Zero",
-                        "M",
-                        null,null,null));
-            }
-        };
+		List<Good> goodlist = goodService.queryGoods();
+//        List<Good> goodlist = new ArrayList<Good>() {
+//            {
+//                add(new Good("G001",
+//                        "AirForce1",
+//                        "F",
+//                        null,null,null));
+//                add(new Good("G002",
+//                        "AirMax Zero",
+//                        "M",
+//                        null,null,null));
+//            }
+//        };
         model.addAttribute("goodlist", goodlist);
         return "goodlist";
     }

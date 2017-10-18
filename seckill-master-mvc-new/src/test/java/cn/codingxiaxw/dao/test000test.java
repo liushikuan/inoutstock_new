@@ -31,7 +31,7 @@ public class test000test {
 	public void testUpdate () throws Exception{
 		System.out.println("测试更新");
 		System.out.println("rrrrr");
-		testDao.testUpdate("哈哈哈", "1");
+		testDao.testUpdate("哈哈哈111", "1");
 	}
 	
 //	@Test
