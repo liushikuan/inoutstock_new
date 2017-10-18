@@ -1,10 +1,10 @@
 <%@page contentType="text/html; charset=UTF-8" language="java" %>
-<%@include file="common/tag.jsp"%>
+<%@include file="WEB-INF/jsp/common/tag.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>库存商品列表</title>
-    <%@include file="common/head.jsp" %>
+    <title>新增商品</title>
+    <%@include file="WEB-INF/jsp/common/head.jsp" %>
 </head>
 <body>
 <div class="container">
@@ -22,26 +22,22 @@
                     <th>待定1</th>
                     <th>待定2</th>
                     <th>待定3</th>
-                    <th>删除商品</th>
-                    <th>新增商品</th>
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach items="${goodlist}" var="gl">
+                <%--<c:forEach items="${goodlist}" var="gl">
                     <tr>
                         <td onclick="initTest()">${gl.goodnum}</td>
                         <td>${gl.goodname}</td>
                         <td>
                             ${gl.maleorfemale}
-                            <%--<fmt:formatDate value="${sk.startTime}" pattern="yyyy-MM-dd HH:mm:ss" />--%>
+                            &lt;%&ndash;<fmt:formatDate value="${sk.startTime}" pattern="yyyy-MM-dd HH:mm:ss" />&ndash;%&gt;
                         </td>
                         <td>${gl.attribute1}</td>
                         <td>${gl.attribute2}</td>
                         <td>${gl.attribute3}</td>
-                        <td class="btn btn-info" onclick="deleteGood('${gl.goodnum}')">删除</td>
-                        <td><a class="btn btn-info" href="/good/insertgood" target="_blank">新增</a></td>
                     </tr>
-                </c:forEach>
+                </c:forEach>--%>
                 </tbody>
             </table>
 
@@ -57,7 +53,7 @@
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <%--商品js--%>
-<script src="../../resource/script/good.js"></script>
+<script src="resource/script/good.js"></script>
 
 </body>
 </html>
