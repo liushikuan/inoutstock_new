@@ -17,28 +17,28 @@
                 <thead>
                 <tr>
                     <th>编码</th>
-                    <th><input type="text" class="form-control"></th>
+                    <th><input id="goodnum" type="text" class="form-control"></th>
                 </tr>
                 <tr>
                     <th>名称</th>
-                    <th><input type="text" class="form-control"></th>
+                    <th><input id="name" type="text" class="form-control"></th>
                 </tr>
                 <tr>
                     <th>男款或女款</th>
-                    <th><input type="text" class="form-control"></th>
+                    <th><input id="femaleormale" type="text" class="form-control"></th>
                 </tr>
                 <tr>
                     <th>待定1</th>
-                    <th><input type="text" class="form-control"></th>
+                    <th><input id="attribute1" type="text" class="form-control"></th>
                 </tr>
                 <tr>
                     <th>待定2</th>
-                    <th><input type="text" class="form-control"></th>
+                    <th><input id="attribute2" type="text" class="form-control"></th>
                 </tr>
 
                 <tr>
                     <th>待定3</th>
-                    <th><input type="text" class="form-control"></th>
+                    <th><input id="attribute3" type="text" class="form-control"></th>
                 </tr>
                 </thead>
                 <tbody>
