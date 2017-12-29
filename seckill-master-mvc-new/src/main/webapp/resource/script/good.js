@@ -20,5 +20,25 @@ function deleteGood(goodnum) {
             console.log('result: ' + result);
         }
     });
+    // 刷新页面
+    location.reload();
+}
+
+function insertGood(goodnum) {
+    $.get("/good/" + goodnum, {}, function (result) {
+        debugger;
+        //在回调函数种执行交互流程
+        if (result && result['success']) {
+            var commonResult = result['data'];
+            if (commonResult['code'] == "1") {//成功情况
+                alert(commonResult['result']);
+            } else {
+                alert(commonResult['result']);
+            }
+        } else {
+            console.log('result: ' + result);
+        }
+    });
+    // 刷新页面
     location.reload();
 }
